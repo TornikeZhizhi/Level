@@ -20,9 +20,6 @@ a {
 a:hover {
   text-decoration: none; }
 
-h1 {
-  font-family: 'Conv_Lato-Regular'; }
-
 @font-face {
   font-family: 'Conv_Montserrat-Bold';
   src: url("../fonts/Montserrat-Bold.eot");
@@ -357,5 +354,81 @@ body {
         font-size: 11.5px;
         color: #ffffff;
         margin-top: 20px; }
+
+.resp_navbar {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  z-index: 1000;
+  display: flex;
+  top: 0;
+  transition: .4s;
+  overflow: hidden; }
+  .resp_navbar.active {
+    height: 100vh; }
+  .resp_navbar .resp_navbar_img {
+    width: 50%;
+    height: 100%; }
+    .resp_navbar .resp_navbar_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .resp_navbar .navigation_box {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(183, 46, 137, 0.8);
+    overflow: hidden;
+    position: relative; }
+    .resp_navbar .navigation_box .navigation {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translateY(-50%); }
+      .resp_navbar .navigation_box .navigation ul {
+        margin-left: 0px;
+        margin-top: 30px; }
+        .resp_navbar .navigation_box .navigation ul a {
+          font-size: 21px;
+          color: #ffffff;
+          transition: all .1s; }
+          .resp_navbar .navigation_box .navigation ul a:hover {
+            color: #ffb819; }
+
+#hamburger_icon {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 100;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer; }
+  #hamburger_icon .hamburger {
+    width: 100%;
+    background-color: #ffb819;
+    height: 2px;
+    position: absolute;
+    transition: all .2s;
+    backface-visibility: hidden; }
+    #hamburger_icon .hamburger.hamb1 {
+      top: 0; }
+    #hamburger_icon .hamburger.hamb2 {
+      top: 50%;
+      transform: translateY(-50%); }
+      #hamburger_icon .hamburger.hamb2.deactive {
+        display: none; }
+    #hamburger_icon .hamburger.hamb3 {
+      bottom: 0; }
+    #hamburger_icon .hamburger.active1 {
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(-225deg); }
+    #hamburger_icon .hamburger.active2 {
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(225deg); }
 
 /*# sourceMappingURL=main.css.map */
