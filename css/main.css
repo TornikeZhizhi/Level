@@ -1,0 +1,150 @@
+@charset "UTF-8";
+*:after,
+*:before,
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+  box-sizing: border-box; }
+
+*:focus {
+  outline: none; }
+
+h1, h2, h3, h4, h5, h6, ul {
+  margin-bottom: 0; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+h1 {
+  font-family: 'Conv_Lato-Regular'; }
+
+@font-face {
+  font-family: 'Conv_Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Conv_Lato-Regular';
+  src: url("../fonts/Lato-Regular.eot");
+  src: local("☺"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  position: relative; }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 30px;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #9d839a; }
+  .header .main_logo {
+    display: flex;
+    align-items: center; }
+    .header .main_logo a {
+      display: flex; }
+  .header .header_nav ul {
+    display: flex; }
+    .header .header_nav ul li a {
+      color: #ffffff;
+      display: inline-block;
+      padding: 10px 30px;
+      border-radius: 3px;
+      transition: all .3s;
+      color: #ffffff; }
+      .header .header_nav ul li a:hover {
+        background-color: #620d51; }
+    .header .header_nav ul li:not(:first-child) {
+      padding-left: 5px; }
+
+.slider_fluid #slider {
+  width: 100%;
+  height: 100vh; }
+  .slider_fluid #slider .bottom_logo {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 30; }
+  .slider_fluid #slider .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%); }
+    .slider_fluid #slider .owl-dots .owl-dot:focus {
+      outline: none; }
+    .slider_fluid #slider .owl-dots .owl-dot:hover span {
+      background-color: #fff;
+      transform: scale(1.1); }
+    .slider_fluid #slider .owl-dots .owl-dot span {
+      background-color: #ffffff; }
+    .slider_fluid #slider .owl-dots .owl-dot.active span {
+      background-color: #d0009e;
+      box-shadow: -0.7px 0px 3px 4px #69616c; }
+
+.owl-carousel .owl-item .slider_text {
+  position: absolute;
+  top: 27vw;
+  left: 10vw;
+  max-width: 240px; }
+  .owl-carousel .owl-item .slider_text p {
+    color: #ffffff;
+    text-align: justify;
+    letter-spacing: -0.3px; }
+  .owl-carousel .owl-item .slider_text a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ffb819;
+    border-radius: 3px;
+    color: #ffffff; }
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: calc(27vw + 170px);
+  left: 9.2vw;
+  z-index: 23; }
+
+.owl-carousel .owl-nav button.owl-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../img/Group-4.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .owl-carousel .owl-nav button.owl-prev:hover {
+    outline: none; }
+  .owl-carousel .owl-nav button.owl-prev:focus {
+    outline: none; }
+  .owl-carousel .owl-nav button.owl-prev span {
+    display: none; }
+  .owl-carousel .owl-nav button.owl-prev:hover {
+    background-image: url("../img/Group-4.png"); }
+
+.owl-carousel .owl-nav button.owl-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../img/Group-3.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .owl-carousel .owl-nav button.owl-next:hover {
+    outline: none; }
+  .owl-carousel .owl-nav button.owl-next:focus {
+    outline: none; }
+  .owl-carousel .owl-nav button.owl-next span {
+    display: none; }
+  .owl-carousel .owl-nav button.owl-next:hover {
+    background-image: url("../img/Group-3.png"); }
+
+/*# sourceMappingURL=main.css.map */
