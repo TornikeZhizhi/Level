@@ -21,13 +21,13 @@
 @media only screen and (max-width: 992px) {
 
 .header_nav {
-	display: none;
+    display: none;
 }
 
 .resp_navbar {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .owl-carousel .owl-item .slider_text h2 {
@@ -95,7 +95,7 @@
 @media only screen and (max-width:768px) {
 
 .resp_navbar_img {
-	display: none;
+    display: none;
 }
 .resp_navbar .navigation_box {
     width: 100%;
@@ -214,7 +214,7 @@
 @media only screen and (max-width:576px) {
 
 .resp_navbar_img {
-	display: none;
+    display: none;
 }
 .resp_navbar .navigation_box {
     width: 100%;
@@ -380,17 +380,23 @@
             justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; 
     -webkit-box-align: center; 
         -ms-flex-align: center; 
             align-items: center;
     
 }
-
+.whowe_fluid .container .whowe_info_box .info_ypc .year_info {
+    margin-bottom: 20px;
 }
-
-@media only screen and (max-width:370px) {
-
-
+.whowe_fluid .container .whowe_info_box .info_ypc .year_info > span {
+    font-size: 40px;
+    line-height: 65px;
+}
+.whowe_fluid .container .whowe_info_box .info_ypc .year_info h3 {
+    font-size: 10.5px;
+}
+.whowe_fluid {
+    padding-bottom: 50px;
+  
+}
 }
