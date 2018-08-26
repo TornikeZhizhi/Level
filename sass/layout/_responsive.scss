@@ -9,6 +9,9 @@
     left: 0px;
     width: 100%;
     height: 59%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), color-stop(23%, #1a0e1c));
+    background: -webkit-linear-gradient(#ffffff00 0%, #1a0e1c 23%);
+    background: -o-linear-gradient(#ffffff00 0%, #1a0e1c 23%);
     background: linear-gradient(#ffffff00 0%, #1a0e1c 23%);
 }
 }
@@ -22,6 +25,8 @@
 }
 
 .resp_navbar {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -55,6 +60,9 @@
 .container-fluid.idea_fluid:before {
  
     top: -100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), color-stop(8%, #1a0e1c));
+    background: -webkit-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
+    background: -o-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
     background: linear-gradient(#ffffff00 0%, #1a0e1c 8%);
 }
 .idea_fluid .container .idea_box .idea_content {
@@ -283,7 +291,11 @@
 }
 .projects_fluid .container .projects_img_right {
    
-     justify-content: unset; 
+     -webkit-box-pack: unset;
+   
+         -ms-flex-pack: unset;
+   
+             justify-content: unset; 
 }
 .projects_fluid .container .projects_img_right {
      height: unset; 
@@ -360,10 +372,19 @@
 
 @media only screen and (max-width:450px) {
 .whowe_fluid .container .whowe_info_box .info_ypc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column; 
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
     
 }
 
@@ -373,4 +394,3 @@
 
 
 }
-
