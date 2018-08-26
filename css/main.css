@@ -829,6 +829,47 @@ body {
 
   .projects_fluid {
     padding: 35px 0; } }
+@media only screen and (max-width: 480px) {
+  .container-fluid.idea_fluid:before {
+    content: unset; }
+
+  .owl-carousel .owl-item .slider_text h2 {
+    font-size: 19px;
+    line-height: 10px; }
+
+  .owl-carousel .owl-item .slider_text {
+    max-width: 165px; }
+
+  .owl-carousel .owl-item .slider_text p {
+    font-size: 8px; }
+
+  .owl-carousel .owl-item .slider_text a {
+    padding: 7px 6px;
+    font-size: 7px; }
+
+  .owl-theme .owl-nav {
+    top: calc(18vw + 90px);
+    left: 3.8vw; }
+
+  .header {
+    padding: 12px 12px; }
+
+  #hamburger_icon {
+    top: 1.5%;
+    right: 5%; }
+
+  .idea_fluid {
+    padding: 30px 0; }
+
+  .projfect_img_row {
+    padding: 20px 0; }
+
+  .footer_fluid {
+    padding: 50px 0; }
+
+  .slider_fluid #slider .bottom_logo {
+    right: 20px;
+    bottom: 20px; } }
 @media only screen and (max-width: 450px) {
   .whowe_fluid .container .whowe_info_box .info_ypc {
     display: flex;
