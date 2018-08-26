@@ -32,9 +32,12 @@
 
 	<div class="header_nav">
 		<ul>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Clients</a></li>
-			<li><a href="">Contact Us</a></li>
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Expertise</a></li>
+				<li><a href="">Projects</a></li>
+				<li><a href="">Clients</a></li>
+				<li><a href="">Contact Us</a></li>
 		</ul>
 	</div>
 </div>
@@ -81,16 +84,18 @@
             <div class="item">
               <img src="img/Group-2.jpg">
               <div class="slider_text">
-              		<p>In a city that’s always one step aheadof the world, we’re here to conjure up some life-changing events.</p>
+              		<h2>steve aoki</h2>
+              		<p>In a city that’s always one step ahead of the world, we’re here to conjure up some life-changing events.</p>
 
               		<a href="">GET IN TOUCH</a>
 
               </div>
             </div>
             <div class="item">
-               <img src="img/photo-1445404590072-16ef9c18bd83.jpg">
+               <img src="img/photo-1506535858348-e329cd025cc6.jpg">
                <div class="slider_text">
-              		<p>In a city that’s always one step aheadof the world, we’re here to conjure up some life-changing events.</p>
+               		<h2>steve aoki</h2>
+              		<p>In a city that’s always one step ahead of the world, we’re here to conjure up some life-changing events.</p>
 
               		<a href="">GET IN TOUCH</a>
 
@@ -99,16 +104,18 @@
             <div class="item">
                  <img src="img/Group-2.jpg">
                  <div class="slider_text">
-              		<p>In a city that’s always one step aheadof the world, we’re here to conjure up some life-changing events.</p>
+                 		<h2>steve aoki</h2>
+              		<p>In a city that’s always one step ahead of the world, we’re here to conjure up some life-changing events.</p>
 
               		<a href="">GET IN TOUCH</a>
 
               </div>
             </div>
             <div class="item">
-                <img src="img/photo-1445404590072-16ef9c18bd83.jpg">
+                <img src="img/photo-1506535858348-e329cd025cc6.jpg">
                 <div class="slider_text">
-              		<p>In a city that’s always one step aheadof the world, we’re here to conjure up some life-changing events.</p>
+                		<h2>steve aoki</h2>
+              		<p>In a city that’s always one step ahead of the world, we’re here to conjure up some life-changing events.</p>
 
               		<a href="">GET IN TOUCH</a>
 
@@ -119,83 +126,13 @@
           </div>
        
           <script>
-            $(document).ready(function() {
-              $('.owl-carousel').owlCarousel({
-              	  animateIn: 'fadeIn',
-	            animateOut: 'fadeOut',
-                 dotsSpeed: 1000,
-	            dragEndSpeed: 1000,
-              	 loop:true,
-	          	 smartSpeed: 1169,
-                nav:true,
-                items: 1,
-                margin: 0,
-                autoHeight: false,
-                items: 1,
-	            // autoplay: true,
-          
-            
-         
-              });
-            })
-
-
-
+      
           </script>
       <!--   </div> -->
      <!--  </div> -->
     </section>
 
 </div>
-<script type="text/javascript">
-	$(window).on('load', function (){
-		setInterval(function(){
-        $(".owl-carousel .owl-item img").height('auto')
-         if($(window).width() < 1300){
-            	var height = $('.owl-carousel .owl-item img').height()
-            	$('#slider').height(height);
-
-            	// $(".bottom_logo").height(height)
-
-            	var imgHeight = $(".owl-carousel .owl-item img").eq(0).height()
-
-            	$(".owl-carousel .owl-item img").height(imgHeight)
-
-            }
-            else{
-
-            	$('#slider').height('100vh')
-            }
-		}
-			,200)
-           
-        
-	})
-  $(window).on('resize', function (){
-  	setInterval(function(){
-  		$(".owl-carousel .owl-item img").height('auto')
-        if($(window).width() < 1300){
-           
-            	var height1 = $('.owl-carousel .owl-item img').height()
-            	$('#slider').height(height1);
-
-            	var imgHeight = $(".owl-carousel .owl-item img").eq(0).height()
-
-            	$(".owl-carousel .owl-item img").height(imgHeight)
-
-            }
-             else{
-
-            	$('#slider').height('100vh')
-             
-            }
-
-
-  	},200)
-        
-	})
-
-</script>
 	
 <div class="container-fluid idea_fluid">
 
@@ -317,7 +254,7 @@
 	
 				<div class="whowe_img_box">
 
-					<img src="img/Layer-13-copy-2.png">
+					<img id="imgmove" src="img/Layer-13-copy-2.png">
 
 				</div>
 
@@ -338,17 +275,17 @@
 
 						<div class="year_info">
 							<span>7</span>
-							<h3><span>years</span> of experience</h3>
+							<h3><a href=""><span>years</span> of experience</a></h3>
 						</div>
 
 						<div class="year_info">
 							<span>2k+</span>
-							<h3><span>project</span> done globaly</h3>
+							<h3><a href=""><span>project</span> done globaly</a></h3>
 						</div>
 
 						<div class="year_info">
 							<span>10k+</span>
-							<h3>happy <span>customers</span> worldwide</h3>
+							<h3><a href="">happy <span>customers</span> worldwide</a></h3>
 						</div>
 
 					</div>
@@ -377,24 +314,29 @@
 
 			<div class="col-lg-6 unpadding">
 				<div class="projects_img_left">
-					<img src="img/Layer-17.jpg">
+					<a href=""><img src="img/Layer-17.jpg"></a>
+
+					<div class="projects_img_left_text">
+						<h3>ADAM SALEH</h3>
+						<span>Riverland,Dubai</span>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-lg-6 unpadding">
 				<div class="projects_img_right">
 						<div class="top_img">
-							<img src="img/Layer-18.jpg">
+							<a href=""><img src="img/Layer-18.jpg"></a>
 						</div>
 
 						<div class="bott_images_box">
 
 							<div class="bott_images">
-								<img src="img/Layer-19.jpg">
+								<a href=""><img src="img/Layer-19.jpg"></a>
 							</div>
 
 							<div class="bott_images">
-								<img src="img/Layer-19.jpg">
+								<a href=""><img src="img/Layer-19.jpg"></a>
 							</div>
 
 						</div>
@@ -447,7 +389,22 @@
 
 
 
-			<div class="col-lg-5"></div>
+			<div class="col-lg-5">
+				<div class="footer_map">
+					<h4>Location</h4>
+
+					<div class="map">
+
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86700.61088502858!2d55.170082456979955!3d24.979475952220703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f72f4b0b690f1%3A0xbe838b0fd118f9d1!2sDubai+Investments+Park+-+Dubai+-+United+Arab+Emirates!5e0!3m2!1sen!2sge!4v1535276383050" width="100%" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+						<p>Dubai Investment Park 2, Dubai, United Arab Emirates.
+info@level-production.com</p>
+					</div>
+
+				</div>
+
+			</div>
 
 
 
