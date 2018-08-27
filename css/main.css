@@ -610,7 +610,7 @@ body {
 
 .container-fluid.idea_fluid {
   position: relative;
-  box-shadow: 0px -209px 225px -57px rgba(26, 14, 28, 0.89); }
+  box-shadow: 0px -209px 138px -22px rgba(26, 14, 28, 0.89); }
 
 .place-card.place-card-medium {
   display: none !important; }
@@ -1149,7 +1149,7 @@ body {
     text-align: center; }
 
   .container-fluid.idea_fluid {
-    box-shadow: 4px -30px 35px -1px rgba(26, 14, 28, 0.89); } }
+    box-shadow: unset; } }
 @media only screen and (max-width: 480px) {
   .owl-carousel .owl-item .slider_text h2 {
     font-size: 19px;
