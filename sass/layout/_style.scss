@@ -869,8 +869,9 @@ body {
 
 .container-fluid.idea_fluid{
 	position: relative;
+	    box-shadow: 0px -103px 177px 164px rgba(26,14,28,0.89);
 
-	 &:before{
+/*	 &:before{
 	 	position:absolute;
 	 	content: '';
 	 	bottom: 0px;
@@ -882,7 +883,7 @@ body {
  	    background: -o-linear-gradient( #d8cfcf00 0%, #1a0e1c 13%);
  	    background: linear-gradient( #d8cfcf00 0%, #1a0e1c 13%);
  	        background: linear-gradient(#d8cfcf00 0%, #1a0e1c 13%);
-	 }
+	 }*/
 }
 
 .place-card.place-card-medium{
