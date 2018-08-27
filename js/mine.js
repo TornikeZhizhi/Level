@@ -88,12 +88,8 @@ $(document).ready(function(){
 	$(window).mousemove(function(event){
 
 		var x = event.clientX/40;	
-		var y = event.clientY/40;	
-
-		$("#imgmove").css("transform","translate(" + y + "px," + x +"px)")
-		// $("#imgmove").css("transform","translatex(" + x + "px)")
-
-	
+		var y = event.clientY/80;	
+		$("#imgmove").css("transform","translate(" + x + "px," + y +"px)")
 
 	})
 })      
@@ -105,32 +101,6 @@ $(document).ready(function(){
 	$(window).on("load",function(){
 		 if($(window).width() > 992){
 
-		 	$(window).on('scroll', check_if_in_view);
-$(window).on('scroll resize', check_if_in_view);
-$(window).trigger('scroll');
-
-function check_if_in_view() {
-  var window_height = $(window).height();
-  var window_top_position = $(window).scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
-
-  $.each($('.idea_tittle'), function() {
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
-
-    
-    if ((element_bottom_position >= window_top_position) &&
-        (element_top_position <= window_bottom_position)) {
-
-      $('.idea_tittle').addClass('bounceInLeft');
-      $('.idea_text').addClass('bounceInRight');
-
-    }
-
-  });
-}
 
 $(window).on('scroll', check_if_in_view2);
 $(window).on('scroll resize', check_if_in_view2);
@@ -141,7 +111,7 @@ function check_if_in_view2() {
   var window_top_position = $(window).scrollTop();
   var window_bottom_position = (window_top_position + window_height);
 
-  $.each($('.idea_scroll1'), function() {
+  $.each($('.idea_content'), function() {
     var $element = $(this);
     var element_height = $element.outerHeight();
     var element_top_position = $element.offset().top;
@@ -151,8 +121,8 @@ function check_if_in_view2() {
     if ((element_bottom_position >= window_top_position) &&
         (element_top_position <= window_bottom_position)) {
 
-      $('.idea_scroll1').addClass('bounceInLeft');
-      $('.idea_scroll2').addClass('bounceInRight');
+      $('.idea_scroll1').addClass('bounceInUp');
+     
 
     }
 
@@ -168,7 +138,7 @@ function check_if_in_view3() {
   var window_top_position = $(window).scrollTop();
   var window_bottom_position = (window_top_position + window_height);
 
-  $.each($('.whowe_img_box'), function() {
+  $.each($('.year_info'), function() {
     var $element = $(this);
     var element_height = $element.outerHeight();
     var element_top_position = $element.offset().top;
@@ -198,7 +168,7 @@ function check_if_in_view4() {
   var window_top_position = $(window).scrollTop();
   var window_bottom_position = (window_top_position + window_height);
 
-  $.each($('.projects_img_left'), function() {
+  $.each($('.bott_images'), function() {
     var $element = $(this);
     var element_height = $element.outerHeight();
     var element_top_position = $element.offset().top;

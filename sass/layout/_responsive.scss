@@ -60,10 +60,10 @@
 .container-fluid.idea_fluid:before {
  
     top: -100px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), color-stop(8%, #1a0e1c));
-    background: -webkit-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
-    background: -o-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
-    background: linear-gradient(#ffffff00 0%, #1a0e1c 8%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), color-stop(7%, #1a0e1c));
+    background: -webkit-linear-gradient(#ffffff00 0%, #1a0e1c 7%);
+    background: -o-linear-gradient(#ffffff00 0%, #1a0e1c 7%);
+    background: linear-gradient(#ffffff00 0%, #1a0e1c 7%);
 }
 .idea_fluid .container .idea_box .idea_content {
  
@@ -282,7 +282,6 @@
 }
 .projects_fluid .container .projects_img_right .bott_images_box {
     margin-bottom: 15px;
-   /* flex-direction: column-reverse;*/
 }
 .projects_fluid .container .projects_img_right .bott_images_box {
    
@@ -310,13 +309,22 @@
     padding: 35px 0;
 }
 
+.projects_fluid .container .project_bott_text p {
+  text-alignc:center;
+}
+.idea_fluid .container .idea_bott_text p {
+   text-align:center;
+}
+
 }
 
 @media only screen and (max-width:480px) {
 .container-fluid.idea_fluid:before {
-   
-    content: unset;
-  
+    top: -75px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), color-stop(8%, #1a0e1c));
+    background: -webkit-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
+    background: -o-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
+    background: linear-gradient(#ffffff00 0%, #1a0e1c 8%);
 }
 
 .owl-carousel .owl-item .slider_text h2 {
@@ -398,5 +406,15 @@
 .whowe_fluid {
     padding-bottom: 50px;
   
+}
+}
+
+@media only screen and (max-width:370px) {
+    .container-fluid.idea_fluid:before {
+    top: -30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), color-stop(8%, #1a0e1c));
+    background: -webkit-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
+    background: -o-linear-gradient(#ffffff00 0%, #1a0e1c 8%);
+    background: linear-gradient(#ffffff00 0%, #1a0e1c 2%);
 }
 }

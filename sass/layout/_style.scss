@@ -869,7 +869,6 @@ body {
 
 .container-fluid.idea_fluid{
 	position: relative;
-	    overflow: hidden;
 
 	 &:before{
 	 	position:absolute;
@@ -878,10 +877,11 @@ body {
 	 	left: 0px;
 	 	width: 100%;
 	 	height: 130%;
- 	    background: -webkit-gradient( linear , left top, left bottom , from(#ffffff00) , color-stop(21%, #1a0e1c));
- 	    background: -webkit-linear-gradient( #ffffff00 0% , #1a0e1c 21%);
- 	    background: -o-linear-gradient( #ffffff00 0% , #1a0e1c 21%);
- 	    background: linear-gradient( #ffffff00 0% , #1a0e1c 21%);
+ 	    background: -webkit-gradient( linear , left top, left bottom , from(#d8cfcf00) , color-stop(13%, #1a0e1c));
+ 	    background: -webkit-linear-gradient( #d8cfcf00 0%, #1a0e1c 13%);
+ 	    background: -o-linear-gradient( #d8cfcf00 0%, #1a0e1c 13%);
+ 	    background: linear-gradient( #d8cfcf00 0%, #1a0e1c 13%);
+ 	        background: linear-gradient(#d8cfcf00 0%, #1a0e1c 13%);
 	 }
 }
 
@@ -1149,8 +1149,7 @@ body {
           animation-duration: 1.5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+
 }
 
 @-webkit-keyframes bounceInRight {
@@ -1236,8 +1235,7 @@ body {
           animation-duration: 1.5s;
       -webkit-animation-fill-mode: backwards;
               animation-fill-mode: backwards;
-      -webkit-animation-delay: .3s;
-              animation-delay: .3s;
+
 }
 
 
@@ -1324,12 +1322,11 @@ body {
           animation-fill-mode: backwards;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
-   -webkit-animation-delay: .3s;
-           animation-delay: .3s;
+
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
