@@ -1149,7 +1149,7 @@ body {
     text-align: center; }
 
   .container-fluid.idea_fluid {
-    box-shadow: unset; } }
+    box-shadow: 4px -30px 35px -1px rgba(26, 14, 28, 0.89); } }
 @media only screen and (max-width: 480px) {
   .owl-carousel .owl-item .slider_text h2 {
     font-size: 19px;
