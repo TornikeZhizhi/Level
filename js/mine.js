@@ -11,6 +11,15 @@ let current = 1;
 let startX = 0;
 let isDragging = false;
 
+/* ===================== */
+/* AUTO SLIDE SETTINGS   */
+/* ===================== */
+let autoSlide = null;
+const AUTO_DELAY = 3000;
+
+/* ===================== */
+/* CORE LOGIC            */
+/* ===================== */
 function updateClasses() {
   cards.forEach(c => c.className = "card");
 
@@ -28,21 +37,40 @@ function move(direction) {
 }
 
 /* ===================== */
+/* AUTO SLIDE            */
+/* ===================== */
+function startAutoSlide() {
+  stopAutoSlide();
+  autoSlide = setInterval(() => {
+    move(1);
+  }, AUTO_DELAY);
+}
+
+function stopAutoSlide() {
+  if (autoSlide) {
+    clearInterval(autoSlide);
+    autoSlide = null;
+  }
+}
+
+/* ===================== */
 /* TOUCH EVENTS (MOBILE) */
 /* ===================== */
 carousel.addEventListener("touchstart", e => {
+  stopAutoSlide();
   startX = e.touches[0].clientX;
 });
 
 carousel.addEventListener("touchend", e => {
-  const endX = e.changedTouches[0].clientX;
-  handleSwipe(endX);
+  handleSwipe(e.changedTouches[0].clientX);
+  startAutoSlide();
 });
 
 /* ===================== */
 /* MOUSE EVENTS (DESKTOP) */
 /* ===================== */
 carousel.addEventListener("mousedown", e => {
+  stopAutoSlide();
   isDragging = true;
   startX = e.clientX;
 });
@@ -51,6 +79,7 @@ carousel.addEventListener("mouseup", e => {
   if (!isDragging) return;
   isDragging = false;
   handleSwipe(e.clientX);
+  startAutoSlide();
 });
 
 carousel.addEventListener("mouseleave", () => {
@@ -58,26 +87,40 @@ carousel.addEventListener("mouseleave", () => {
 });
 
 /* ===================== */
-/* SWIPE LOGIC */
+/* SWIPE LOGIC           */
 /* ===================== */
 function handleSwipe(endX) {
   const diff = endX - startX;
 
-  if (Math.abs(diff) < 50) return; // minimum swipe distance
+  if (Math.abs(diff) < 50) return;
 
   if (diff > 0) {
     move(-1); // swipe right
   } else {
-    move(1); // swipe left
+    move(1);  // swipe left
   }
 }
 
-$("#btn1").click(function(){
-	move(-1)
-})
-$("#btn2").click(function(){
-	move(1)
-})
+/* ===================== */
+/* BUTTON CONTROLS       */
+/* ===================== */
+$("#btn1").click(function () {
+  stopAutoSlide();
+  move(-1);
+  startAutoSlide();
+});
+
+$("#btn2").click(function () {
+  stopAutoSlide();
+  move(1);
+  startAutoSlide();
+});
+
+/* ===================== */
+/* INIT                  */
+/* ===================== */
+updateClasses();
+startAutoSlide();
 
 
 // $(".card").click(function(e) {
