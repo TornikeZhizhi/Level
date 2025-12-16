@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 	const carousel = document.getElementById("carousel");
 const cards = document.querySelectorAll(".card");
+const cardNext = document.querySelectorAll(".active");
 
 let current = 1;
 let startX = 0;
@@ -53,6 +54,18 @@ function stopAutoSlide() {
   }
 }
 
+carousel.addEventListener("click", function (e) {
+  const nextCard = e.target.closest(".card.next");
+  if (!nextCard) return;
+
+  move(1)
+});
+carousel.addEventListener("click", function (e) {
+  const nextCard = e.target.closest(".card.prev");
+  if (!nextCard) return;
+
+  move(-1)
+});
 /* ===================== */
 /* TOUCH EVENTS (MOBILE) */
 /* ===================== */
